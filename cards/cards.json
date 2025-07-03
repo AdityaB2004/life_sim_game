@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "description": "You find a stray dog on the street looking hungry.",
+        "left_option": ["Feed the dog", {"morale": 5, "wealth": -2}],
+        "right_option": ["Ignore it", {"morale": -3}],
+        "age_range": [1, 100],
+        "has_consequence": false
+    },
+    {
+        "id": 2,
+        "description": "A friend asks to borrow money but he has a history of not returning it.",
+        "left_option": ["Lend money anyway", {"wealth": -10, "social": 5}],
+        "right_option": ["decline", {"social": -5}],
+        "age_range": [20, 60],
+        "has_consequence": true,
+        "consequence_ids":[100,101]
+    },
+    {
+        "id": 100,
+        "description": "Your friend likes you more",
+        "left_option": ["", {"morale": 0, "social": 0}],
+        "right_option": ["", {"morale": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 101,
+        "description": "Your friend is no more your frind",
+        "left_option": ["", {"morale": 0, "social": 0}],
+        "right_option": ["", {"morale": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 3,
+        "description": "comedy or horror movie?.",
+        "left_option": ["comedy", {"morale": 15, "vitality": 0}],
+        "right_option": ["horror", {"morale": -14, "social": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 4,
+        "description": "You are offered a lot of money for a risky job.",
+        "left_option": ["accept it", {"wealth": 0, "morale": 0}],
+        "right_option": ["Avoid it", {"morale": 0, "social": 0}],
+        "age_range": [30,50],
+        "has_consequence": true,
+        "consequence_ids" : [102,103]
+    },
+    {
+        "id": 102,
+        "description": "You feel guilty after taking the job.",
+        "left_option": ["", {"morale": 0, "social": 0}],
+        "right_option": ["", {"morale": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 103,
+        "description": "You regret missing out on the money, but feel at peace.",
+        "left_option": ["", {"morale": 0, "social": 0}],
+        "right_option": ["", {"morale": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 5,
+        "description": "you want to skip homework.",
+        "left_option": ["do it anyway", {"morale": -2, "social": 3}],
+        "right_option": ["skip it", {"morale": 4, "social": -2}],
+        "age_range": [5,15],
+        "has_consequence": false
+    },
+    {
+        "id": 6,
+        "description": "The weather is going from bad to worse , should you stay indoors?.",
+        "left_option": ["I am not scared of some bad weather!", {"morale": -5, "vitality": -10}],
+        "right_option": ["Avoid it", {"morale": -4, "social": 10}],
+        "age_range": [20,25],
+        "has_consequence": true,
+        "consequence_ids" :[104,105]
+    },
+    {
+        "id": 104,
+        "description": "about the weather...You get struck by lightning",
+        "left_option": ["", {"morale": 0, "vitality": 0}],
+        "right_option": ["", {"morale": 0, "social": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 105,
+        "description": "Your ego is hurt but you are safe",
+        "left_option": ["", {"morale": 0, "vitality": 0}],
+        "right_option": ["", {"morale": 0, "social": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 7,
+        "description": "You see a wallet on the ground.",
+        "left_option": ["Finders keepers", {"morale": -10, "wealth": 10}],
+        "right_option": ["ignore it", {"morale": 5, "social": -5}],
+        "age_range": null,
+        "has_consequence": true,
+        "consequence_ids":[106,107]
+
+    },
+    {
+        "id": 106,
+        "description": "you get some extra money but at the cost of your pride",
+        "left_option": ["", {"morale": 0, "vitality": 0}],
+        "right_option": ["", {"morale": 0, "social": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 107,
+        "description": "you feel good not taking things that arent yours",
+        "left_option": ["", {"morale": 0, "vitality": 0}],
+        "right_option": ["", {"morale": 0, "social": 0}],
+        "age_range": null,
+        "has_consequence": false
+    },
+    {
+        "id": 8,
+        "description": "exercising helps in the long run , should you do it?",
+        "left_option": ["Yes", {"morale": 5, "vitality": 3}],
+        "right_option": ["no", {"morale": -4, "social": -2}],
+        "age_range": null,
+        "has_consequence": false
+    }
+]
